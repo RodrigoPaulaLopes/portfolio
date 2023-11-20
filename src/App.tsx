@@ -4,20 +4,18 @@ import Home from "./pages/Home";
 import Container from "./components/Container/Container";
 import Content from "./components/Content";
 import Menu from "./components/Menu";
-import Footer from "./components/Footer";
-import Section from "./components/Section";
-import Sobre from "./pages/Sobre";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { Rotas } from "./routes";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <Container>
-      <Content>
-        <Menu />
-        <Home />
-      </Content>
-    </Container>
+    <Router>
+      <Container>
+        <Content>
+          <Menu />
+          <Rotas />
+        </Content>
+      </Container>
+    </Router>
   );
 }
 

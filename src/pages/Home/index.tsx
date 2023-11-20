@@ -3,7 +3,7 @@ import Avatar from "../../components/Avatar";
 export default function Home() {
   return (
     <section className="h-full flex items-center justify-center w-full">
-      <div className="h-full flex items-center justify-center flex-col gap-5 w-11/12">
+      <div className="h-full flex items-center flex-col gap-5 w-11/12">
         <Avatar />
         <h1 className="text-3xl leading-none font-medium">Olá, eu sou o</h1>
         <span className="text-4xl leading-none text-emerald-700 font-medium">

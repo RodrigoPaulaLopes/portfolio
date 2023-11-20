@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Menu() {
   return (
     <header className="w-11/12 h-1/5">
@@ -11,7 +12,6 @@ export default function Menu() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                
               >
                 <path
                   strokeLinecap="round"
@@ -26,13 +26,19 @@ export default function Menu() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52"
             >
               <li>
-                <a className="text-white">Home</a>
+                <Link to="/" className="text-white">
+                  Home
+                </Link>
               </li>
               <li>
-                <a className="text-white">Sobre</a>
+                <Link to="/sobre" className="text-white">
+                  Sobre
+                </Link>
               </li>
               <li>
-                <a className="text-white">Habilidades</a>
+                <Link to="/habilidades" className="text-white">
+                  Habilidades
+                </Link>
               </li>
               <li>
                 <a className="text-white">Projetos</a>
